@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SXC60S | Built for Volvo Culture</title>
+  <style>
+    body{margin:0;background:#0b0c0c;color:#f4f1ea;font-family:Arial,sans-serif}
+    a{color:inherit;text-decoration:none}
+    header{position:fixed;top:0;left:0;right:0;z-index:10;display:flex;justify-content:space-between;align-items:center;padding:18px 6vw;background:linear-gradient(#080909cc,#08090900)}
+    .logo{font-weight:900;border:1px solid #ffffff33;padding:12px 14px}
+    nav{display:flex;gap:24px;font-size:13px;font-weight:800;text-transform:uppercase;color:#ccc}
+    .hero{min-height:94vh;display:flex;align-items:end;position:relative;padding:120px 6vw 90px;overflow:hidden}
+    .hero:before{content:"";position:absolute;inset:0;background:url("assets/s60l-hero.jpg") center/cover;filter:saturate(.85) contrast(1.1);z-index:-2}
+    .hero:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,#080909ee,#08090966,#08090922),linear-gradient(0deg,#080909,#08090911);z-index:-1}
+    h1{font-size:clamp(64px,16vw,190px);line-height:.8;margin:0 0 20px;font-weight:950}
+    h2{font-size:clamp(34px,6vw,78px);line-height:.95;margin:0 0 24px}
+    h3{font-size:26px;margin:0 0 10px}
+    p{line-height:1.65;color:#c9c5bb}
+    .eyebrow{color:#dbe8e6;font-size:12px;font-weight:900;text-transform:uppercase}
+    .hero p{max-width:700px;font-size:clamp(18px,2vw,24px);color:#f4f1ea}
+    .buttons{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}
+    .btn{padding:15px 20px;border:1px solid #ffffff33;font-weight:900;text-transform:uppercase}
+    .btn.red{background:#d53f34;border-color:#d53f34;color:white}
+    section{padding:90px 6vw}
+    .intro{display:grid;grid-template-columns:1.1fr .9fr;gap:60px}
+    .dark{background:#141515}
+    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+    .card{border:1px solid #ffffff22;background:#ffffff0c;overflow:hidden}
+    .card img{width:100%;height:320px;object-fit:cover;display:block;filter:saturate(.9)}
+    .card div{padding:24px}
+    .builds{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+    .build{min-height:310px;padding:34px;border:1px solid #ffffff22;background:#ffffff0c}
+    .build strong{font-size:56px;color:#ffffff33}
+    .light{background:#dbe8e6;color:#101211}
+    .light p{color:#3b4240}
+    .socials{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+    .socials a{border:1px solid #ffffff22;padding:24px;min-height:150px;background:#ffffff0c}
+    footer{padding:30px 6vw;border-top:1px solid #ffffff22;color:#aaa;display:flex;justify-content:space-between}
+    @media(max-width:800px){nav{display:none}.intro,.grid,.builds,.socials{grid-template-columns:1fr}.hero{padding:110px 22px 70px}section{padding:70px 22px}.buttons .btn{width:100%;text-align:center}footer{display:block}}
+  </style>
+</head>
+<body>
+  <header>
+    <a class="logo" href="#">SXC60S</a>
+    <nav><a href="#films">Films</a><a href="#builds">Builds</a><a href="#meets">Meets</a><a href="#socials">Socials</a></nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div>
+        <div class="eyebrow">Modern Volvo culture / cinematic media</div>
+        <h1>SXC60S</h1>
+        <p>Built from a 2016 Volvo S60L and a 2017 Volvo XC60 T6 to show that Volvos can be aggressive, cinematic, luxurious, and unique.</p>
+        <div class="buttons"><a class="btn red" href="#films">Watch the reels</a><a class="btn" href="#builds">Explore builds</a></div>
+      </div>
+    </section>
+
+    <section class="intro">
+      <h2>Built for Volvo Culture.</h2>
+      <p>SXC60S is a cinematic Volvo media brand built around photography, edits, rollers, drone footage, meets, custom builds, and Scandinavian performance culture.</p>
+    </section>
+
+    <section class="dark" id="films">
+      <div class="eyebrow">Featured media</div>
+      <h2>Rollers, edits, and night runs.</h2>
+      <div class="grid">
+        <article class="card"><img src="assets/s60-feature.jpg"><div><h3>After-dark rollers</h3><p>Cinematic motion, street lighting, and clean Volvo presence.</p></div></article>
+        <article class="card"><img src="assets/xc60-feature.jpg"><div><h3>Tunnel pulls</h3><p>Short-form edits built for YouTube, TikTok, and Instagram.</p></div></article>
+        <article class="card"><img src="assets/xc60-detail.jpg"><div><h3>Photo sets</h3><p>Luxury details, aggressive stance, and community highlights.</p></div></article>
+      </div>
+    </section>
+
+    <section id="builds">
+      <div class="eyebrow">Garage</div>
+      <h2>Two Volvos. One visual language.</h2>
+      <div class="builds">
+        <article class="build"><strong>S60L</strong><h3>2016 Volvo S60L</h3><p>Clean, low, sharp, and built for nighttime rolling shots.</p></article>
+        <article class="build"><strong>XC60</strong><h3>2017 Volvo XC60 T6</h3><p>Confident, practical, uncommon, and ready for motion clips.</p></article>
+      </div>
+    </section>
+
+    <section class="light" id="meets">
+      <div class="eyebrow">Community</div>
+      <h2>Meets, shoots, and culture nights.</h2>
+      <p>Upcoming gatherings will spotlight Volvo builds, photo sessions, rollers, community edits, and recap films.</p>
+    </section>
+
+    <section id="socials">
+      <div class="eyebrow">Find the channel</div>
+      <h2>Follow the footage where it drops.</h2>
+      <div class="socials">
+        <a href="#"><h3>Instagram</h3><p>Photography and reels</p></a>
+        <a href="#"><h3>YouTube</h3><p>Films and edits</p></a>
+        <a href="#"><h3>TikTok</h3><p>Short clips</p></a>
+        <a href="#"><h3>Facebook</h3><p>Events and posts</p></a>
+      </div>
+    </section>
+  </main>
+
+  <footer><strong>SXC60S</strong><span>Built for Volvo Culture.</span></footer>
+</body>
+</html>
